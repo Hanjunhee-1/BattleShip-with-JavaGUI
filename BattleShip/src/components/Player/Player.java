@@ -15,7 +15,7 @@ public class Player extends JPanel{
     private JLabel scoreLabel;
     private JPanel scorePanel;
 
-    public Player(String name, Color c) {
+    public Player(String name, int colorCode) {
         this.name = name;
         this.score = 0;
 
@@ -37,7 +37,7 @@ public class Player extends JPanel{
 
         this.setLayout(new BorderLayout());
         this.setSize(120, 90);
-        this.setBorder(new LineBorder(c, 2));
+        this.setBorder(new LineBorder(new Color(colorCode), 2));
 
         this.add(namePanel, BorderLayout.NORTH);
         this.add(scorePanel, BorderLayout.SOUTH);
