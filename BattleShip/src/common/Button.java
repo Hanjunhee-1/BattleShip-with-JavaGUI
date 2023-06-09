@@ -25,4 +25,8 @@ public class Button extends JPanel {
     public void setButtonText(String text) {
         button.setText(text);
     }
+
+    public void setButtonBorder() {
+        button.setBorder(null);
+    }
 }
