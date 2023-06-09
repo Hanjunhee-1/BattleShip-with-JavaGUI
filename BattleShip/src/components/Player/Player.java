@@ -2,6 +2,8 @@ package components.Player;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
 
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -20,23 +22,17 @@ public class Player extends JPanel{
         this.score = 0;
 
         nameLabel = new JLabel(name);
+        nameLabel.setFont(new Font("Ink Free", Font.BOLD, 32));
         namePanel = new JPanel();
         namePanel.add(nameLabel);
 
         scoreLabel = new JLabel(Integer.toString(score));
+        scoreLabel.setFont(new Font("Ink Free", Font.BOLD, 22));
         scorePanel = new JPanel();
         scorePanel.add(scoreLabel);
 
-        /* 확인용 나중에 지워야 됨 */
-        nameLabel.setOpaque(true);
-        nameLabel.setBackground(Color.red);
-
-        /* 확인용 나중에 지워야 됨 */
-        scoreLabel.setOpaque(true);
-        scoreLabel.setBackground(Color.blue);
-
         this.setLayout(new BorderLayout());
-        this.setSize(120, 90);
+        this.setPreferredSize(new Dimension(160, 120));
         this.setBorder(new LineBorder(new Color(colorCode), 2));
 
         this.add(namePanel, BorderLayout.NORTH);
