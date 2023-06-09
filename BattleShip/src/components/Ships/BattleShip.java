@@ -1,4 +1,4 @@
-package components;
+package components.Ships;
 
 import java.awt.Font;
 
