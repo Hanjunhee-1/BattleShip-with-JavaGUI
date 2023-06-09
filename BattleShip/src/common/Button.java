@@ -13,7 +13,7 @@ public class Button extends JPanel {
     public Button() {
         button = new JButton();
         button.setPreferredSize(new Dimension(60, 20));
-        button.setText("click!");
+        // button.setText("click!");
         button.setBorder(new LineBorder(Color.black, 1));
 
         this.add(button);
@@ -28,6 +28,6 @@ public class Button extends JPanel {
     }
 
     public void setButtonBorder() {
-        button.setBorder(null);
+        button.setBorder(new LineBorder(Color.black, 1));
     }
 }
